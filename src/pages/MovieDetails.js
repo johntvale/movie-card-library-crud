@@ -4,6 +4,7 @@ import { Link, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import * as movieAPI from '../services/movieAPI';
 import { Loading } from '../components';
+import '../App.css';
 
 class MovieDetails extends Component {
   constructor(props) {
@@ -43,19 +44,27 @@ class MovieDetails extends Component {
     const { movie, rendered, backToMain } = this.state;
     const { title, storyline, imagePath, genre, rating, subtitle, id } = movie;
 
+    if (rendered) {
+      return (<Loading />);
+    }
     return (
-      <div data-testid="movie-details">
+      <div data-testid="movie-details" className="movie-details-content">
         {backToMain && <Redirect to="/" />}
-        {rendered && <Loading />}
-        <p>{ `title: ${title}` }</p>
-        <img alt="Movie Cover" src={ `../${imagePath}` } />
-        <p>{ `Subtitle: ${subtitle}` }</p>
-        <p>{ `Storyline: ${storyline}` }</p>
-        <p>{ `Genre: ${genre}` }</p>
-        <p>{ `Rating: ${rating}` }</p>
-        <Link to="/">VOLTAR</Link>
-        <Link to={ `/movies/${id}/edit` }>EDITAR</Link>
-        <Link to="/" onClick={ this.handleClick }>DELETAR</Link>
+        <div className="movie-details-card">
+          <img alt="Movie Cover" src={ `../${imagePath}` } />
+          <div className="movie-details-card-info">
+            <p className="movie-details-card-title">{ title }</p>
+            <p className="movie-details-card-info-item">{ `Subtitle: ${subtitle}` }</p>
+            <p className="movie-details-card-info-item">{ `Storyline: ${storyline}` }</p>
+            <p className="movie-details-card-info-item">{ `Genre: ${genre}` }</p>
+            <p className="movie-details-card-info-item">{ `Rating: ${rating}` }</p>
+          </div>
+          <div className="movie-details-card-btn">
+            <Link to="/">VOLTAR</Link>
+            <Link to={ `/movies/${id}/edit` }>EDITAR</Link>
+            <Link to="/" onClick={ this.handleClick }>DELETAR</Link>
+          </div>
+        </div>
       </div>
     );
   }

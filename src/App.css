@@ -1,5 +1,134 @@
 body {
-  background-color: whitesmoke;
+  background-color: rgb(235, 235, 235);
   box-sizing: border-box;
 }
 
+.loading {
+  font-size: 1.5em;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.movie-list {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 400px));
+  justify-content: center;
+  margin: 0 10%;
+  margin-top: 25px;
+}
+
+.movie-card, .movie-details-card {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card-img {
+  min-height: 200px;
+
+}
+
+.movie-card-img, .movie-details-card > img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+.movie-card-title {
+  color: white;
+  font-weight: 100;
+  margin-left: 20px;
+  margin-top: -50px;
+  position: absolute;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.movie-card-info {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+  height: 80px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.movie-card-details-btn, .movie-details-card-btn {
+  padding: 20px;
+}
+
+.movie-card-details-btn > a, .movie-details-card-btn > a {
+  color: rgb(255, 173, 69);
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.movie-details-content {
+  margin: 0 3%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.movie-details-card-title {
+  color: white;
+  font-size: 36px;
+  font-weight: 300;
+  margin-left: 45px;
+  margin-top: -100px;
+  position: absolute;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.movie-details-card-info {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.movie-details-card-info-item {
+  font-size: larger;
+  margin: 20px;
+}
+
+.movie-list-add-card-btn {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  margin: 30px 10%;
+  padding: 20px;
+  text-align: center;
+}
+
+.movie-list-add-card-btn > a {
+  color: rgb(255, 173, 69);
+  text-decoration: none;
+}
+
+.form-movie-content {
+  margin: 0 10%;
+}
+
+.form-item {
+  margin: 10px;
+}
+
+.form-btn {
+  margin: 15px;
+  text-align: center;
+}
+
+.form-btn > button {
+  color: rgb(255, 173, 69);
+  font-size: larger;
+  height: 40px;
+  width: 100%;
+}
+
+.form-input {
+  margin-top: 5px;
+  min-height: 20px;
+  width: 100%;
+}
