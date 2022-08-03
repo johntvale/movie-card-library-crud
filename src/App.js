@@ -10,23 +10,23 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={ MovieList } />
+        <Route exact path="https://johntvale.github.io/movie-card-library-crud/" component={ MovieList } />
         <Route
           exact
-          path="/movies/new"
+          path="https://johntvale.github.io/movie-card-library-crud/movies/new"
           render={ (props) => <NewMovie { ...props } /> }
         />
         <Route
           exact
-          path="/movies/:id"
+          path="https://johntvale.github.io/movie-card-library-crud/movies/:id"
           render={ (props) => <MovieDetails { ...props } /> }
         />
         <Route
           exact
-          path="/movies/:id/edit"
+          path="https://johntvale.github.io/movie-card-library-crud/movies/:id/edit"
           render={ (props) => <EditMovie { ...props } /> }
         />
-        <Route path="/" component={ NotFound } />
+        <Route path="https://johntvale.github.io/movie-card-library-crud/" component={ NotFound } />
       </Switch>
     </BrowserRouter>
   );
