@@ -33,6 +33,4 @@ class NewMovie extends Component {
   }
 }
 
-// Eu e Guilherme Rodrigues estudamos juntos e recebemos ajuda do Gabriel Lenz gabriellenz-projectMovieCardsCrud.
-
 export default NewMovie;

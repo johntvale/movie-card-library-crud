@@ -38,7 +38,7 @@ class EditMovie extends Component {
   render() {
     const { rendered, redirect, movie } = this.state;
     if (rendered) return <Loading />;
-    if (redirect) return <Redirect to="/" />;
+    if (redirect) return <Redirect to="/movie-card-library-crud" />;
 
     return (
       <div data-testid="edit-movie" className="form-movie-content">
