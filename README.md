@@ -6,7 +6,7 @@
 
   O objetivo desse projeto é praticar os conhecimentos sobre CRUD, e manipulação de rotas.
 
-  *<i>O delay de 2s no carregamento da lista é para simular o comportamento da página caso estivesse sendo feita requisição a um API</i>
+  <i>Obs: A página não está conectada a nenhum banco de dados e não utiliza cookies, então algumas informações não irão renderizar corretamente quando receber atualizações</i>
 
   Você pode acessá-lo <a href="https://johntvale.github.io/movie-card-library-crud/">clicando aqui :rocket:</a>
 
