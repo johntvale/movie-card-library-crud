@@ -56,6 +56,4 @@ EditMovie.propTypes = {
   }).isRequired,
 };
 
-// Eu e Guilherme Rodrigues estudamos juntos e recebemos ajuda do Gabriel Lenz gabriellenz-projectMovieCardsCrud.
-
 export default EditMovie;
