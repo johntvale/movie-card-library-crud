@@ -47,7 +47,7 @@ class MovieList extends Component {
           }
         </div>
         <div className="movie-list-add-card-btn">
-          <Link to="https://johntvale.github.io/movie-card-library-crud/movies/new">ADICIONAR FILME</Link>
+          <Link to="/movies/new">ADICIONAR FILME</Link>
         </div>
       </div>
     );

@@ -60,9 +60,9 @@ class MovieDetails extends Component {
             <p className="movie-details-card-info-item">{ `Rating: ${rating}` }</p>
           </div>
           <div className="movie-details-card-btn">
-            <Link to="https://johntvale.github.io/movie-card-library-crud/">VOLTAR</Link>
-            <Link to={ `https://johntvale.github.io/movie-card-library-crud/movies/${id}/edit` }>EDITAR</Link>
-            <Link to="https://johntvale.github.io/movie-card-library-crud/" onClick={ this.handleClick }>DELETAR</Link>
+            <Link to="/">VOLTAR</Link>
+            <Link to={ `/movies/${id}/edit` }>EDITAR</Link>
+            <Link to="/" onClick={ this.handleClick }>DELETAR</Link>
           </div>
         </div>
       </div>
